@@ -1,6 +1,10 @@
 public class StudentInfoModel
 {
-    public string Name { get; set; }
-    public string StudentId { get; set; }
-    public string StudentAge { get; set; }
+    public string StudentName { get; set; }
+    public string StudAge { get; set; }
+    public string Contact { get; set; }
+    public string Address { get; set; }
+    public string YearandSection { get; set; }
+    public string Campus { get; set; }
+
 }

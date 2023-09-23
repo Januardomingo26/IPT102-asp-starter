@@ -4,33 +4,42 @@
     width: 100%
 }
 .student-table th {
-border: 1px solid #9c9c9c;
+border: 1px solid #000407;
 padding: 8px 12px;
-background: #ffd7d7;
+background: rgb(5, 247, 215);
 }
 .student-table td {
 padding: 4px 8px;
-border: 1px solid #d6d6d6;
+border: 1px solid #01090f;
 }
 </style>
 
-<h1>Sample Student Information</h1>
+<h1> Student List </h1>
 
 <table border="1" class="student-table">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Student ID</th>
+            <th>Student Name</th>
             <th>Age</th>
+            <th>Contact #</th>
+            <th>Address</th>
+            <th>Year and Section</th>
+            <th>Campus</th>
+
         </tr>
     </thead>
     <tbody>
-        @foreach (var student in Model)
+        @foreach (var Student in Model)
         {
             <tr>
-                <td>@student.Name</td>
-                <td>@student.StudentId</td>
-                <td>@student.StudentAge</td>
+                <td>@Student.StudentName</td>
+                <td>@Student.StudAge</td>
+                <td>@Student.Contact</td>
+                <td>@Student.Address</td>
+                <td>@Student.YearandSection</td>
+                <td>@Student.Campus</td>
+
+
             </tr>
         }
     </tbody>
